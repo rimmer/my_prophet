@@ -81,6 +81,7 @@ enum Gem {
   PurpleSpinel,
   BlackTopaz,
   Onyx,
+  BlackPearl,
 }
 
 const GemToFileName = {
@@ -113,6 +114,7 @@ const GemToFileName = {
   Gem.Amethyst: "gem_amethyst.svg",
   Gem.PurpleSpinel: "gem_purple_spinel.svg",
   Gem.BlackTopaz: "gem_black_topaz.svg",
+  Gem.BlackPearl: "gem_black_pearl.svg",
   Gem.Onyx: "gem_onyx.svg",
 };
 
