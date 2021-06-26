@@ -1,0 +1,16 @@
+targets:
+  $default:
+    builders:
+      symbol|combinations:
+        # Only run this builder on the specified input.
+        generate_for:
+          - lib/symbol.dart
+
+builders:
+  combinations:
+    import: "package:symbol/builder.dart"
+    builder_factories: [ "combinationsBuilder" ]
+    build_extensions: { ".dart": [ "symbol.g.part" ] }
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: [ "source_gen|combining_builder" ]
